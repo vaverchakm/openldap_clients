@@ -1,0 +1,7 @@
+- name: Install openldap packages
+  yum:
+   name: "{{ packages }}"
+   state: latest
+
+- name: import the base structure in to the LDAP directory base.ldif
+  shell: authconfig --enableldap --enableldapauth --ldapserver={{ server_host }}.{{ dc1 }}.{{ dc2 }} --ldapbasedn="{{ dc1 }},dc= {{ dc2 }}" --enablemkhomedir --update

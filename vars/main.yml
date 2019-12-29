@@ -1,0 +1,8 @@
+packages:
+- openldap-clients
+- nss-pam-ldapd
+- sssd
+
+server_host: prdx-ldap12
+dc1: ziyotek2
+dc2: local

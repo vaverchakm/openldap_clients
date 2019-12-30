@@ -4,4 +4,4 @@
    state: latest
 
 - name: add client to ldap with command
-  shell: authconfig --enableldap --enableldapauth --ldapserver={{ server_host }}.{{ dc1 }}.{{ dc2 }} --ldapbasedn="{{ dc1 }},dc= {{ dc2 }}" --enablemkhomedir --update
+  shell: authconfig --enableldap --enableldapauth --ldapserver={{ server_host }}.{{ dc1 }}.{{ dc2 }} --ldapbasedn="dc={{ dc1 }},dc={{ dc2 }}" --enablemkhomedir --update

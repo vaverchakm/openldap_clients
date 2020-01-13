@@ -4,5 +4,5 @@ packages:
 - sssd
 
 server_host: prdx-ldap12
-dc1: ziyotek2
-dc2: local
+dc1: type_here_your_domain
+dc2: local(or_com_or_whatever)
